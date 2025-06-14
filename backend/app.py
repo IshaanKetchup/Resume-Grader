@@ -1,6 +1,6 @@
 from flask import Flask, request, jsonify
 import os
-from utils import extract_text_from_file
+from parser import extract_text_from_file
 from matcher import compute_similarity
 
 app = Flask(__name__)
