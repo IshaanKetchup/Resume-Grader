@@ -3,7 +3,8 @@ import re
 import numpy as np
 
 # Load E5 model (trained to understand "query: ..." and "passage: ...")
-model = SentenceTransformer("intfloat/e5-small-v2")
+#model = SentenceTransformer("intfloat/e5-small-v2")
+model = SentenceTransformer("paraphrase-MiniLM-L6-v2")
 
 # --- Smart section splitter ---
 def split_into_sections(resume_text: str) -> dict:
