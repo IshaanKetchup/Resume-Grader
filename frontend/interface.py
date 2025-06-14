@@ -11,7 +11,7 @@ if st.button("Calculate"):
     if job_desc and uploaded_files:
         files = [('resumes', (f.name, f, f.type)) for f in uploaded_files]
         try:
-            response = requests.post("https://resume-grader-r6xh.onrender.com", data={'job_desc': job_desc}, files=files)
+            response = requests.post("https://resume-grader-r6xh.onrender.com/match", data={'job_desc': job_desc}, files=files)
             response.raise_for_status()
             results = response.json()
 
