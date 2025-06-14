@@ -1,0 +1,7 @@
+flask 
+transformers 
+sentence-transformers 
+scikit-learn 
+pdfminer.six 
+python-docx
+streamlit
