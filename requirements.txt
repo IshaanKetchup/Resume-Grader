@@ -6,4 +6,4 @@ pdfminer.six
 python-docx
 streamlit
 gunicorn
-utils
+
