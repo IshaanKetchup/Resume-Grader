@@ -5,6 +5,8 @@ import numpy as np
 # Load E5 model (trained to understand "query: ..." and "passage: ...")
 #model = SentenceTransformer("intfloat/e5-small-v2")
 model = SentenceTransformer("paraphrase-MiniLM-L6-v2")
+# Preload model at startup to measure memory immediately
+model.encode("warmup sentence")
 
 # --- Smart section splitter ---
 def split_into_sections(resume_text: str) -> dict:
